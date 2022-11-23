@@ -1,0 +1,56 @@
+@import url(footer.css);
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+font-family: 'Inter', sans-serif;
+background-color:darkblue;
+}
+
+.flex{
+
+    display:flex;
+    justify-content: space-between;
+}
+
+.td{
+    cursor: pointer;
+}
+img {
+    max-width: 100%;
+    height: auto;
+  }
+  button{
+    color: white;
+    background-color: red;
+  }
+  h1{
+    color: white;
+  }
+ 
+ div.card{
+    background-color: white;
+    display: flex;
+    
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    gap: 1rem;
+    position: relative;
+    
+    flex-direction: column;
+    scroll-snap-align: center;
+    
+    height: auto;
+    background-color: #fff;
+   
+   cursor: pointer;
+    transition: 0.3s ease;
+   
+ }
